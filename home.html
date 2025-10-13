@@ -16,11 +16,16 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="donate.html" class="donate-btn">Donate</a>
+     <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </nav>
 
   <section id="about" class="section about">
     <div class="content">
-      <img src="students.jpg" alt="Students with A. Jackson" class="image" />
+      <img src="placeholder2.jpg" alt="Students with A. Jackson" class="image" />
       <div class="text">
         <h2>About Us</h2>
         <p>As communities evolve, so do their needs. We will be going to the DR and working closely with non-profits to better understand the local challenges.</p>
@@ -33,10 +38,12 @@
       <h2>Where we are going:</h2>
       <h3>Empowering Children in the Dominican Republic</h3>
       <p><strong>June 2026</strong></p>
+      <div class="mobile-text">
       <p>We will be going to the DR and working closely with youth in the DR, supporting youth with access to education, youth development and brainstorming ideas to reduce generational poverty.</p>
     </div>
+    </div>
     <div class="media">
-      <img src="student.jpg" alt="Student portrait" class="image" />
+      <img src="placeholder5.jpg" alt="Student portrait" class="image" />
       <div class="qr">
         <img src="qrcode.png" alt="Donate QR" />
         <p><strong>Donate</strong></p>
@@ -49,6 +56,13 @@
 
   </div>
 </footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
