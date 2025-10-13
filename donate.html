@@ -10,6 +10,11 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="donate.html" class="donate-btn">Donate</a>
+     <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </nav></body>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,5 +57,13 @@
     <div class="circle circle1"></div>
     <div class="circle circle2"></div>
   </section>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
