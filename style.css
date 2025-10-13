@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.donate-btn {
+  background: #0b63f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background: #0841a5;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about .content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about .image {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.where {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.where .text {
+  flex: 1;
+}
+
+.where .media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.where .media .image {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.qr img {
+  width: 120px;
+  height: 120px;
+}
+
+.qr p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* ---- DONATE PAGE STYLES ---- */
+.donate-section {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.donate-section h1 {
+  font-size: 2.5rem;
+  color: #0b3d91;
+  margin-bottom: 0.5rem;
+}
+
+.donate-section p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.donate-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.student-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 250px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.student-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.student-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.student-card button {
+  background: #0b63f6;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.student-card button:hover {
+  background: #0841a5;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #d1e2ff 0%, transparent 70%);
+  z-index: 1;
+}
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -150px;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  right: -100px;
+}
+
+@media (max-width: 900px) {
+  .donate-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.footer {
+  background-color: #2e2e30;
+  color: #cfcccc;
+  text-align: left;
+  padding: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #0841a5;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
