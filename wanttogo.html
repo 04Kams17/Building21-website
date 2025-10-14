@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
   <body>  <nav class="navbar">
-    <div class="logo">Building 21</div>
+    <div class="logo">
+      <a href="home.html">Building 21 </a></div>
     <ul class="nav-links">
       <li><a href="home.html">Home</a></li>
       <li><a href="wanttogo.html">Why we want to go</a></li>
@@ -34,4 +35,12 @@
   Your browser does not support the video tag.
 </video>
 </section>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
