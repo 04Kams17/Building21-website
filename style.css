@@ -86,9 +86,14 @@ body {
 }
 
 .about .content {
+
+  max-width: 1200px;
+  padding: 2rem;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 2rem;
+  overflow-wrap: normal;
 }
 
 .about .image {
@@ -104,7 +109,9 @@ body {
   gap: 2rem;
 }
 
-.where .text {
+.where .text { 
+  padding: 2rem;
+  border-radius: 12px;;
   flex: 1;
 }
 
@@ -165,7 +172,7 @@ font-weight: bold;
   align-items: flex-start;
   gap: 2rem;
   flex-wrap: nowrap;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow-x: auto;
   padding-bottom: 1rem;
@@ -176,7 +183,7 @@ font-weight: bold;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   padding: 1rem;
-  width: 250px;
+  width: 200px;
   flex-shrink: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -307,9 +314,9 @@ font-weight: bold;
   margin-top: 2rem;
 }
 
-/* .home-color{ */
-  /* background-color: #ffa909; */
-/* } */
+  .home-color{   
+   background-color: #ffa909;  
+   }  
 
 .student-card {
   width: 200px;
@@ -335,3 +342,13 @@ padding-bottom: 2rem;
     font-weight: bold;
     transition: background 0.3s;
   }
+
+.wbodycolor{
+  background-color: #ffa909;  
+}
+.dbodycolor{
+  background-color: #ffa909;
+}
+.cbodycolor{
+  background-color: #ffa909;
+}
